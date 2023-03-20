@@ -4,6 +4,7 @@
 #include <vector>
 #include <cstdint>
 
+
 #ifndef PRINT_BST_H
 #define PRINT_BST_H
 
@@ -30,6 +31,7 @@ int getNodeDepth(BinarySearchTree<Key, Value> const & tree, Node<Key, Value> * r
         }
 
         ++dist;
+
         node = node->getParent();
 
         if(dist > PPBST_MAX_HEIGHT)
